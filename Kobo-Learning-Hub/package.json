@@ -2,7 +2,7 @@
   "name": "workspace",
   "version": "0.0.0",
   "license": "MIT",
-    "scripts": {
+  "scripts": {
     "build": "pnpm -r --filter=\"./lib/**\" run build",
     "typecheck:libs": "tsc --build",
     "typecheck": "pnpm run typecheck:libs"
@@ -10,9 +10,13 @@
   "private": true,
   "devDependencies": {
     "prettier": "^3.8.3",
+    "rimraf": "^5.0.5",
     "typescript": "~5.9.3"
   },
   "dependencies": {
-    "xlsx": "^0.1.8.5"
+    "xlsx": "^0.18.5"
+  },
+  "engines": {
+    "node": "22.x"
   }
 }
